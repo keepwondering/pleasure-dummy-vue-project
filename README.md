@@ -8,19 +8,19 @@ As an example, will demonstrate the functionality of the pleasure framework in t
 
 ### Dummy Project Configuration
 
-@show-source(tests/dummy/project/pleasure.config.js)
+```js
+module.exports = {
+  ui: {
+    postCssVariables: {
+      theme: {
+        profile: {
+          // accessible via var(--theme-profile-background) in any postcss scope
+          background: `green`
+        }
+      }
+    }
+  }
+}
+```
 
-### Dummy Project Entities
-
-To start, we will create the DB structure of our online store. To do so, we are gonna set entities for:
-users, products and orders, by creating their corresponding files and exporting a [PleasureEntity](#pleasure-entity).
-
-@show-source(tests/dummy/project/api/entities/user.js)
-
-@show-source(tests/dummy/project/api/entities/product.js)
-
-@show-source(tests/dummy/project/api/entities/order.js)
-
-### Dummy Project Access & Permissions
-
-@show-source(tests/dummy/project/api/permissions/index.js)
+[Read the docs](https://keepwondering.github.io/pleasure/#/)
