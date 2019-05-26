@@ -23,4 +23,4 @@ module.exports = {
 }
 ```
 
-[Read the docs](https://keepwondering.github.io/pleasure/#/)
+[Read the docs](https://keepwondering.github.io/pleasure)
