@@ -1,0 +1,11 @@
+FROM keepwondering/pleasure-cli
+ENV PLEASURE_MODE=3-tier
+ENV PLEASURE_CLIENT_APP_URL=http://localhost:8080
+ENV PLEASURE_CLIENT_APP_SERVER_URL=http://api
+ENV PLEASURE_API_MONGODB_HOST=mongo
+WORKDIR /app
+COPY . /app
+RUN yarn --production=false
+RUN yarn pls app gencert --jwt
+EXPOSE 3000
+CMD pls app dev --api

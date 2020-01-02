@@ -1,5 +1,5 @@
 {
-  "name": "pleasure-dummy-vue-project",
+  "name": "@pleasure-js/dummy-vue-project",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.11",
-    "pleasure-cli": "keepwondering/pleasure-cli#v1-beta"
+    "@pleasure-js/cli": "git@github.com:pleasure-js/cli.git#v1-beta"
   },
   "devDependencies": {
     "ava": "^1.4.1"
